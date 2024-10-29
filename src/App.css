@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-color: #f0f4f8;
+  height: 100vh;
+  padding: 20px;
+}
+
+.app-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.character-count-container,
+.user-input-container {
+  width: 100%;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .app-card-container {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .character-count-container,
+  .user-input-container {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.count-the-character {
+  color: #334155;
+  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+
+.user-entered-characters-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.character-name-length {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.character-counter {
+  color: #ffbf1f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-area {
+  width: calc(100% - 90px);
+  height: 40px;
+  border-radius: 20px;
+}
+
+.add-button {
+  background-color: #ffc533;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  height: auto;
+  min-width: 80px;
+}
+.no-character-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.no-user-input-img {
+  height: 150px;
+  width: auto;
+  margin-bottom: 10px;
+}
